@@ -1,0 +1,6 @@
+log : 2019-11-12 21:19:20 : 192.168.1.120 : Watcher error: Error: EPERM: operation not permitted, watch
+log : 2019-11-12 21:19:20 : 192.168.1.120 : Watcher error: Error: EPERM: operation not permitted, watch
+log : 2019-11-12 21:20:07 : 192.168.1.120 : Watcher error: Error: EPERM: operation not permitted, watch
+log : 2019-11-12 21:20:09 : 192.168.1.120 : Watcher error: Error: EPERM: operation not permitted, watch
+log : 2019-11-12 21:19:20 : 192.168.1.120 : Watcher error: Error: EPERM: operation not permitted, watch
+log : 2019-11-12 21:19:20 : 192.168.1.120 : Watcher error: Error: EPERM: operation not permitted, watch

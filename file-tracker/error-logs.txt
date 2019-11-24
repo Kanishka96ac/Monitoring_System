@@ -1,0 +1,1 @@
+log : 2019-09-03 09:06:37 : 192.168.8.100 : Watcher error: Error: EPERM: operation not permitted, watch

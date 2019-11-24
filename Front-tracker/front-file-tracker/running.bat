@@ -1,0 +1,1 @@
+start cmd /k cd /d "F: & proteger_system\monitoring\Front-tracker\front-file-tracker\" & npm start

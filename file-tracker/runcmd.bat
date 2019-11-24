@@ -1,0 +1,1 @@
+start cmd /k node F:\\proteger_system\\monitoring\\file-tracker\\index.js

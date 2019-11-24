@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <link
+      rel="stylesheet prefetch"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <title>React App</title>
+  </head>
+
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+    <!-- <link
+      href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    />
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script> -->
+    <script src="//production-assets.codepen.io/assets/editor/live/console_runner-079c09a0e3b9ff743e39ee2d5637b9216b3545af0de366d4b9aad9dc87e26bfd.js"></script>
+    <script src="//production-assets.codepen.io/assets/editor/live/css_live_reload_init-2c0dc5167d60a5af3ee189d570b1835129687ea2a61bee3513dee3a50c115a77.js"></script>
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="//production-assets.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico"
+    />
+    <link
+      rel="mask-icon"
+      type=""
+      href="//production-assets.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg"
+      color="#111"
+    />
+    <link
+      rel="canonical"
+      href="https://codepen.io/dpinnick/pen/LjdLmo?limit=all&page=21&q=service"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="//production-assets.codepen.io/assets/common/stopExecutionOnTimeout-b2a7b3fe212eaa732349046d8416e00a9dec26eb7fd347590fbced3ab38af52e.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+      // LOGIN TABS
+      $(function() {
+        var tab = $(".tabs h3 a");
+        tab.on("click", function(event) {
+          event.preventDefault();
+          tab.removeClass("active");
+          $(this).addClass("active");
+          tab_content = $(this).attr("href");
+          $('div[id$="tab-content"]').removeClass("active");
+          $(tab_content).addClass("active");
+        });
+      });
+
+      // SLIDESHOW
+      $(function() {
+        $("#slideshow > div:gt(0)").hide();
+        setInterval(function() {
+          $("#slideshow > div:first")
+            .fadeOut(1000)
+            .next()
+            .fadeIn(1000)
+            .end()
+            .appendTo("#slideshow");
+        }, 3850);
+      });
+
+      // CUSTOM JQUERY FUNCTION FOR SWAPPING CLASSES
+      (function($) {
+        "use strict";
+        $.fn.swapClass = function(remove, add) {
+          this.removeClass(remove).addClass(add);
+          return this;
+        };
+      })(jQuery);
+
+      // SHOW/HIDE PANEL ROUTINE (needs better methods)
+      // I'll optimize when time permits.
+      $(function() {
+        $(".agree,.forgot, #toggle-terms, .log-in, .sign-up").on(
+          "click",
+          function(event) {
+            event.preventDefault();
+            var terms = $(".terms"),
+              recovery = $(".recovery"),
+              close = $("#toggle-terms"),
+              arrow = $(".tabs-content .fa");
+            if (
+              $(this).hasClass("agree") ||
+              $(this).hasClass("log-in") ||
+              ($(this).is("#toggle-terms") && terms.hasClass("open"))
+            ) {
+              if (terms.hasClass("open")) {
+                terms.swapClass("open", "closed");
+                close.swapClass("open", "closed");
+                arrow.swapClass("active", "inactive");
+              } else {
+                if ($(this).hasClass("log-in")) {
+                  return;
+                }
+                terms.swapClass("closed", "open").scrollTop(0);
+                close.swapClass("closed", "open");
+                arrow.swapClass("inactive", "active");
+              }
+            } else if (
+              $(this).hasClass("forgot") ||
+              $(this).hasClass("sign-up") ||
+              $(this).is("#toggle-terms")
+            ) {
+              if (recovery.hasClass("open")) {
+                recovery.swapClass("open", "closed");
+                close.swapClass("open", "closed");
+                arrow.swapClass("active", "inactive");
+              } else {
+                if ($(this).hasClass("sign-up")) {
+                  return;
+                }
+                recovery.swapClass("closed", "open");
+                close.swapClass("closed", "open");
+                arrow.swapClass("inactive", "active");
+              }
+            }
+          }
+        );
+      });
+
+      // DISPLAY MSSG
+      $(function() {
+        $(".recovery .button").on("click", function(event) {
+          event.preventDefault();
+          $(".recovery .mssg").addClass("animate");
+          setTimeout(function() {
+            $(".recovery").swapClass("open", "closed");
+            $("#toggle-terms").swapClass("open", "closed");
+            $(".tabs-content .fa").swapClass("active", "inactive");
+            $(".recovery .mssg").removeClass("animate");
+          }, 2500);
+        });
+      });
+
+      // DISABLE SUBMIT FOR DEMO
+      $(function() {
+        $(".button").on("click", function(event) {
+          $(this).stop();
+          event.preventDefault();
+          return false;
+        });
+      });
+      // # sourceURL=pen.js
+    </script>
+  </body>
+</html>

@@ -1,0 +1,117 @@
+.App {
+  text-align: center;
+}
+
+.App {
+  /* The image used */
+  background-image: url("./5.jpg");
+
+  /* Full height */
+  height: 100vh;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.myButton {
+  width: 20rem;
+  height: 7rem;
+  font-size: 20px;
+  text-align: center;
+  line-height: 7rem;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  transition: 0.3s;
+  margin: 3rem;
+  border-radius: 25px;
+}
+
+.myButton:before,
+.myButton:after {
+  content: "";
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  top: 0;
+  left: 0;
+  transition: 0.3s;
+  border-radius: 25px;
+}
+
+.myButton:before {
+  background-color: lightblue;
+  z-index: -1;
+  box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+}
+
+.myButton:after {
+  background-color: navy;
+  transform: translate(1.5rem, 1.5rem);
+  z-index: -2;
+  border-radius: 25px;
+}
+
+.myButton:hover {
+  cursor: pointer;
+  transform: translate(1.5rem, 1.5rem);
+  color: lightblue;
+  border-radius: 25px;
+}
+
+.myButton:hover::before {
+  cursor: pointer;
+  background-color: navy;
+  border-radius: 25px;
+}
+
+.myButton:hover::after {
+  cursor: pointer;
+  background-color: lightblue;
+  transform: translate(-1.5rem, -1.5rem);
+  border-radius: 25px;
+}
+
+h1,
+h2 {
+  color: antiquewhite;
+  text-shadow: 2px 2px #ff0000;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.modal-90w {
+  max-width: 60%;
+}

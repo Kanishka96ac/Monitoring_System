@@ -1,0 +1,2 @@
+log : 2019-11-12 23:10:23 : 192.168.1.120 : File F:proteger_systemworkSecure_filesNew Text Document.txt has been removed
+log : 2019-11-12 23:10:45 : 192.168.1.120 : File F:proteger_systemworkSecure_filesNew Text Document.txt has been removed

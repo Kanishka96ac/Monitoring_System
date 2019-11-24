@@ -1,0 +1,7 @@
+log : 2019-11-12 21:13:11 : 192.168.1.120 : File F:proteger_systemworkdriversCP210x_6.7.4x64WdfCoInstaller01009.dll has been changed
+log : 2019-11-12 21:13:11 : 192.168.1.120 : File F:proteger_systemworkdriversCP210x_6.7x64WdfCoInstaller01009.dll has been changed
+log : 2019-11-12 21:13:10 : 192.168.1.120 : File F:proteger_systemworkdriversdpinst-x86.exe has been changed
+log : 2019-11-12 21:13:11 : 192.168.1.120 : File F:proteger_systemworkdriversCP210x_6.7.4x86WdfCoInstaller01009.dll has been changed
+log : 2019-11-12 23:10:30 : 192.168.1.120 : File F:proteger_systemworkSecure_filesIP_list.txt has been changed
+log : 2019-11-12 23:10:55 : 192.168.1.120 : File F:proteger_systemworkSecure_filesDevice_list.txt has been changed
+log : 2019-11-12 21:13:10 : 192.168.1.120 : File F:proteger_systemworkdriversdpinst-amd64.exe has been changed

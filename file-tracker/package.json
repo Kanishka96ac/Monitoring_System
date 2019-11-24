@@ -1,0 +1,26 @@
+{
+  "name": "file-tracker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "chokidar": "^3.0.2",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "date-time": "^3.1.0",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "hound": "^1.0.5",
+    "ip": "^1.1.5",
+    "line-reader": "^0.4.0",
+    "mysql": "^2.17.1",
+    "nodemon": "^1.19.4"
+  }
+}
